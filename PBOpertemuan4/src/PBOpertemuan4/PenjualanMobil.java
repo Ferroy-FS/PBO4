@@ -38,7 +38,7 @@ public class PenjualanMobil extends Create {
             System.out.print("Pilihan Anda: ");
 
             pilihan = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine();
 
             switch (pilihan) {
                 case 1:
@@ -148,14 +148,14 @@ public class PenjualanMobil extends Create {
 
         System.out.print("Harga (0 jika tidak ingin mengubah): ");
         long harga = scanner.nextLong();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); 
 
         System.out.print("Warna: ");
         String warna = scanner.nextLine();
 
         System.out.print("Stok (-1 jika tidak ingin mengubah): ");
         int stok = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); 
 
         StringBuilder queryBuilder = new StringBuilder("UPDATE penjualan_mobil SET ");
         boolean hasUpdate = false;
@@ -274,3 +274,4 @@ public class PenjualanMobil extends Create {
         }
     }
 }
+
