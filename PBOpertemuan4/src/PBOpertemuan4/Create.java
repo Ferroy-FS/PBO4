@@ -40,8 +40,8 @@ public class Create {
         }
     }
 
-    // ✅ Method ini supaya bisa dipakai juga oleh class turunan (Insert)
     protected Connection getConnection() throws SQLException {
         return DriverManager.getConnection(DB_URL, USER, PASS);
     }
+
 }
